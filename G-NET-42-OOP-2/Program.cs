@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.Intrinsics.X86;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace G_NET_42_OOP_2
@@ -49,18 +50,31 @@ namespace G_NET_42_OOP_2
             Console.WriteLine(r.Area);  // 20
             #endregion
             #region Q3
-        //    a) What is this[int index] called? 
-        //            It is called an Indexer in C#.
+            //    a) What is this[int index] called? 
+            //            It is called an Indexer in C#.
 
-        //    Purpose:
-        //            An indexer allows an object to be accessed like an array.
-        //    b) What happens if someone writes register[10] = "Ali";?
-        //            It will throw >> IndexOutOfRangeException Because index 10 does not exist.
-        //   How to make it safer?
-        //         add validation inside the indexer:
-        //c) Can a class have more than one indexer?
-        //    Yes
+            //    Purpose:
+            //            An indexer allows an object to be accessed like an array.
+            //    b) What happens if someone writes register[10] = "Ali";?
+            //            It will throw >> IndexOutOfRangeException Because index 10 does not exist.
+            //   How to make it safer?
+            //         add validation inside the indexer:
+            //c) Can a class have more than one indexer?
+            //    Yes
+            #endregion
+            #region Q4
+        //    a- The static keyword means the variable belongs to the class itself, not to individual objects.
+        //   - There is only one copy of TotalOrders
+        //    It is shared between all objects
+        //        it is accessed using the class name :
+        //b) No
+        //Why?
+
+        //Because:
+        //    Item is an instance field
+        //    Static methods belong to the class, not to a specific object
+        //    Static methods do not know which object’s Item to access
         #endregion
-    }
+        }
     }
 }
