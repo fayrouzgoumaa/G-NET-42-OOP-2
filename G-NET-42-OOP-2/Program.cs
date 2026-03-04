@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.Intrinsics.X86;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -47,6 +48,19 @@ namespace G_NET_42_OOP_2
             Rectangle r = new Rectangle { Width = 5, Height = 4 };
             Console.WriteLine(r.Area);  // 20
             #endregion
-        }
+            #region Q3
+        //    a) What is this[int index] called? 
+        //            It is called an Indexer in C#.
+
+        //    Purpose:
+        //            An indexer allows an object to be accessed like an array.
+        //    b) What happens if someone writes register[10] = "Ali";?
+        //            It will throw >> IndexOutOfRangeException Because index 10 does not exist.
+        //   How to make it safer?
+        //         add validation inside the indexer:
+        //c) Can a class have more than one indexer?
+        //    Yes
+        #endregion
+    }
     }
 }
